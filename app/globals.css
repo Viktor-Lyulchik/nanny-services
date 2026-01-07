@@ -1,0 +1,113 @@
+:root {
+  --background: #fbfbfb;
+  --foreground: #11101c;
+  --text1: rgba(17, 16, 28, 0.5);
+  --dark-color: #0957c3;
+  --light-color: rgba(16, 57, 49, 0.2);
+  --font-family: 'Inter', sans-serif;
+  --grey-bg: #f3f3f3;
+  --grey-text: #8a8a89;
+  --backdrop: rgba(11, 11, 11, 0.6);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 410px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 64px;
+  }
+}
+
+.input {
+  border: 1px solid rgba(17, 16, 28, 0.1);
+  border-radius: 12px;
+  padding: 16px 18px 16px 18px;
+  width: 100%;
+  height: 52px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.blue-button {
+  background: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 30px;
+  color: var(--background);
+  transition: all 250ms ease-in-out;
+}
+
+.blue-button:hover {
+  background: var(--background);
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+.backdrop {
+  background: var(--backdrop);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 64px;
+  }
+}
