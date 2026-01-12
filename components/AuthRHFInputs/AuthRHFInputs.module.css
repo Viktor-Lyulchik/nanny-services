@@ -1,0 +1,58 @@
+.fieldContainer {
+  margin-bottom: 18px;
+}
+
+.passwordContainer {
+  height: 64px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--background);
+  transition: border-color 0.2s;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #6199ee;
+}
+
+.passwordInput {
+  padding-right: 56px;
+}
+
+.toggleButton {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.toggleButton:hover {
+  opacity: 0.7;
+}
+
+.errorMessage {
+  color: var(--error-color);
+  font-size: 14px;
+  margin-top: 4px;
+}

@@ -1,14 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { AuthProvider } from '@/components/AuthProvider/AuthProvider';
-import { Toaster } from 'react-hot-toast';
-import 'modern-normalize/modern-normalize.css';
-import './globals.css';
-
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
-});
+import css from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Nanny Services - Easy seeking babysitters Online',
@@ -35,17 +26,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const NotFound = () => {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
-        <AuthProvider>{children}</AuthProvider>
-        <Toaster position="top-right" reverseOrder={false} />
-      </body>
-    </html>
+    <div>
+      <h1 className={css.titleNF}>404 - Page not found</h1>
+      <p className={css.descriptionNF}>
+        Sorry, the page you are looking for does not exist.
+      </p>
+    </div>
   );
-}
+};
+
+export default NotFound;

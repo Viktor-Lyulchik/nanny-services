@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 40px;
+}
+
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.loadMoreButton {
+  border-radius: 30px;
+  padding: 14px 40px;
+  width: 159px;
+  height: 48px;
+  background-color: var(--dark-color);
+  color: var(--background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: tight;
+  letter-spacing: -0.01em;
+  border: none;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out;
+}
+
+.loadMoreButton:hover {
+  opacity: 0.8;
+}

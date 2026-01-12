@@ -1,0 +1,213 @@
+.section {
+  padding-block: 16px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: 32px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 32px;
+}
+
+.card {
+  background-color: var(--dark-color);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (min-width: 1280px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+.content {
+  padding-top: 160px;
+  padding-right: 64px;
+  padding-left: 40px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-left: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding-top: 251px;
+    padding-bottom: 171.2px;
+    padding-left: 96px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--background);
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 70px;
+    margin-bottom: 28px;
+  }
+}
+
+.description {
+  font-size: 24px;
+  line-height: 1.07;
+  letter-spacing: -0.02em;
+  color: var(--background);
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 28px;
+    margin-bottom: 72px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 230px;
+  height: 60px;
+  padding-inline: 48px;
+  border-radius: 30px;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  color: var(--background);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: all 0.25s ease;
+}
+
+.button:hover {
+  border-color: var(--background);
+}
+
+.button:hover .icon {
+  transform: rotate(45deg);
+}
+
+.icon {
+  transition: transform 0.25s ease;
+}
+
+.image {
+  min-width: 100%;
+  min-height: 336px;
+  background-image: url('/img/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .image {
+    min-width: 699.2px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .image {
+    min-height: 720px;
+  }
+}
+
+.badge {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background-color: var(--background);
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .badge {
+    gap: 16px;
+    padding: 32px;
+    right: 50px;
+    bottom: 50px;
+  }
+}
+
+.badgeIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 13px;
+  background-color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .badgeIcon {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+.badgeLabel {
+  font-size: 14px;
+  color: rgba(17, 16, 28, 0.5);
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+  .badgeLabel {
+    font-size: 16px;
+  }
+}
+
+.badgeValue {
+  font-weight: 700;
+  font-size: 16px;
+  color: #11101c;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .badgeValue {
+    font-size: 20px;
+  }
+}
+
+.titleNF {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--error-color);
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.descriptionNF {
+  color: var(--dark-color);
+  line-height: 28px;
+  margin-bottom: 16px;
+  font-size: 25px;
+  text-align: center;
+}

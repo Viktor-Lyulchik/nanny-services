@@ -1,0 +1,59 @@
+.loaderContainer {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.maryIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.floatAnimation {
+  animation: float 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.cloudsAnimation {
+  animation: clouds 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-12px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(-12px) rotate(-0.5deg);
+  }
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(-8px);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(8px);
+    opacity: 0.4;
+  }
+}

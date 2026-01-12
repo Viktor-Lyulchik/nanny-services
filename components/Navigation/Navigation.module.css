@@ -1,0 +1,181 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1440px) {
+  .root {
+    gap: 16px;
+  }
+}
+
+.authenticated {
+  justify-content: center;
+  color: var(--background);
+}
+
+.userBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 0;
+  min-width: 0;
+}
+
+@media (min-width: 1024px) {
+  .userBlock {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .userBlock {
+    gap: 14px;
+  }
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: var(--background);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1440px) {
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatar svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.userName {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+@media (min-width: 1440px) {
+  .userName {
+    font-size: 18px;
+    max-width: 200px;
+  }
+}
+
+.logoutButton {
+  height: 48px;
+  min-width: 100px;
+  padding-inline: 20px;
+  border: 1px solid var(--background);
+  border-radius: 30px;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-size: 13px;
+  color: inherit;
+  opacity: 1;
+  background-color: #0000;
+}
+
+@media (min-width: 1440px) {
+  .logoutButton {
+    min-width: 134px;
+    padding-inline: 20px;
+    font-size: 16px;
+  }
+}
+
+.logoutButton:hover {
+  background-color: #ffffff;
+  color: var(--dark-color);
+}
+
+.guest {
+  justify-content: center;
+}
+
+.loginButton {
+  min-width: 100px;
+  height: 48px;
+  padding-inline: 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  background: transparent;
+  color: var(--background);
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.25s ease-in-out;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1440px) {
+  .loginButton {
+    min-width: 124px;
+    height: 48px;
+    padding-inline: 20px;
+    font-size: 16px;
+  }
+}
+
+.loginButton:hover {
+  background-color: var(--background);
+  color: var(--dark-color);
+}
+
+.registerButton {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  background-color: var(--background);
+  color: #0957c3;
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.25s ease-in-out;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1440px) {
+  .registerButton {
+    padding: 14px 40px;
+    font-size: 16px;
+  }
+}
+
+.registerButton:hover {
+  background-color: #0957c3;
+  color: var(--background);
+}
+
+@media (min-width: 768px) {
+  .registerButton {
+    background-color: #0957c3;
+    color: var(--background);
+  }
+
+  .registerButton:hover {
+    background-color: var(--background);
+    color: var(--dark-color);
+  }
+}

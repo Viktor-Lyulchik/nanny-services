@@ -1,13 +1,16 @@
 :root {
   --background: #fbfbfb;
   --foreground: #11101c;
-  --text1: rgba(17, 16, 28, 0.5);
+  --border-color: rgba(17, 16, 28, 0.1);
+  --text: rgba(17, 16, 28, 0.5);
   --dark-color: #0957c3;
   --light-color: rgba(16, 57, 49, 0.2);
+  --avatar-color: rgba(9, 87, 195, 0.2);
   --font-family: 'Inter', sans-serif;
   --grey-bg: #f3f3f3;
   --grey-text: #8a8a89;
   --backdrop: rgba(11, 11, 11, 0.6);
+  --error-color: #c92323;
 }
 
 @theme inline {
@@ -16,7 +19,7 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,15 +42,16 @@ li {
 }
 
 .container {
+  width: 100%;
   min-width: 320px;
-  max-width: 410px;
+  max-width: 767px;
   margin: 0 auto;
   padding: 0;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 1439px;
     padding: 0 32px;
   }
 }
@@ -55,12 +59,11 @@ li {
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0 64px;
   }
 }
 
 .input {
-  border: 1px solid rgba(17, 16, 28, 0.1);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 16px 18px 16px 18px;
   width: 100%;
@@ -96,18 +99,4 @@ li {
   width: 100vw;
   height: 100vh;
   z-index: 100;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 64px;
-  }
 }

@@ -1,0 +1,58 @@
+.header {
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(251, 251, 251, 0.4);
+}
+
+.default {
+  background-color: var(--dark-color);
+  width: 100%;
+  padding: 0 64px;
+}
+
+.overlay {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    top: 30px;
+  }
+}
+
+.overlayContainer {
+  width: 100%;
+  max-width: 1440px;
+  padding-inline: 24px;
+}
+
+@media (min-width: 768px) {
+  .overlayContainer {
+    padding-inline: 56px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .overlayContainer {
+    padding-inline: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .overlayContainer {
+    padding-inline: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .overlayContainer {
+    padding-inline: 128px;
+  }
+}

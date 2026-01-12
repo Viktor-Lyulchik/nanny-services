@@ -1,0 +1,304 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: var(--background);
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+.avatarWrapper {
+  border: 2px solid rgba(240, 63, 59, 0.2);
+  border-radius: 30px;
+  width: 120px;
+  height: 120px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.statusIndicator {
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: #38cd3e;
+  z-index: 20;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.infoSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .topRow {
+    align-items: center;
+  }
+}
+
+.topRowInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .topRowInner {
+    flex-wrap: nowrap;
+  }
+}
+
+.nannyLabel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #6b7280;
+  margin: 0;
+}
+
+.metaInfo {
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .metaInfo {
+    gap: 0;
+    margin-bottom: 0;
+  }
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  margin-left: auto;
+  color: currentColor;
+}
+
+.metaText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .metaText {
+    font-size: 14px;
+  }
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background-color: rgba(17, 16, 28, 0.2);
+  margin: 0 16px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  height: 16px;
+}
+
+.price {
+  color: #38cd3e;
+}
+
+.favoriteButton {
+  margin-left: 48px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.heartIcon {
+  transition: transform 200ms ease-in-out;
+}
+
+.heartIcon:hover {
+  transform: scale(1.1);
+}
+
+.nannyName {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 0 0 24px;
+}
+
+.characteristics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.characteristicTag {
+  border-radius: 24px;
+  padding: 8px 16px;
+  background-color: var(--grey-bg);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--grey-text);
+}
+
+.characteristicValue {
+  color: var(--foreground);
+  text-decoration: underline;
+}
+
+.characteristicValuePlain {
+  color: var(--foreground);
+}
+
+.about {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text);
+  margin: 0 0 14px;
+}
+
+.detailsSection {
+  padding: 24px 0;
+  margin: 0;
+}
+
+.readMoreButton {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+}
+
+.detailsContent {
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+
+.detailsContentVisible {
+  max-height: 384px;
+  opacity: 1;
+}
+
+.review {
+  margin: 0 0 25px;
+}
+
+.reviewHeader {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.reviewerAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--avatar-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 1;
+  color: var(--dark-color);
+}
+
+.reviewerName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0 0 4px;
+}
+
+.reviewRating {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+
+.reviewComment {
+  color: var(--text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.noReviews {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.appointmentButton {
+  margin-top: 23px;
+  margin-bottom: 0;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 215px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--background);
+}
