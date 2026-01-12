@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: 'Nanny Services',
     images: [
       {
-        url: 'https://nanny-services-mocha.vercel.app/hero.png',
+        url: 'https://nanny-services-mocha.vercel.app/img/hero.png',
         width: 1200,
         height: 630,
         alt: 'Nanny Services - Easy seeking babysitters Online',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Nanny Services - Easy seeking babysitters Online',
     description: 'Find a trusted nanny for your child.',
-    images: ['https://nanny-services-mocha.vercel.app/hero.png'],
+    images: ['https://nanny-services-mocha.vercel.app/img/hero.png'],
   },
 };
 
