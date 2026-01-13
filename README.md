@@ -71,7 +71,6 @@ The interface is fully responsive and optimized for **mobile, tablet, and deskto
    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_bucket
    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
    NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-   NEXT_PUBLIC_DEPLOYMENT_URL=https://your-deployment-url
    ```
 
 4. Run the development server:

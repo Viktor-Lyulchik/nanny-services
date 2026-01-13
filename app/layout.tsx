@@ -10,6 +10,8 @@ const inter = Inter({
   subsets: ['latin'],
 });
 
+const SITE_URL = 'https://nanny-services-mocha.vercel.app';
+
 export const metadata: Metadata = {
   title: 'Nanny Services - Easy seeking babysitters Online',
   description: 'Find a trusted nanny for your child.',
@@ -17,11 +19,11 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Nanny Services - Easy seeking babysitters Online',
     description: 'Find a trusted nanny for your child.',
-    url: `${process.env.NEXT_PUBLIC_DEPLOYMENT_URL}/`,
+    url: `${SITE_URL}/`,
     siteName: 'Nanny Services',
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_DEPLOYMENT_URL}/img/hero.png`,
+        url: `${SITE_URL}/img/hero.png`,
         width: 1200,
         height: 630,
         alt: 'Nanny Services - Easy seeking babysitters Online',
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Nanny Services - Easy seeking babysitters Online',
     description: 'Find a trusted nanny for your child.',
-    images: [`${process.env.NEXT_PUBLIC_DEPLOYMENT_URL}/img/hero.png`],
+    images: [`${SITE_URL}/img/hero.png`],
   },
 };
 
