@@ -141,6 +141,7 @@
 @media (max-width: 767px) {
   .burger {
     z-index: 50;
+    border: none;
   }
 }
 
