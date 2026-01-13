@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: 'Nanny Services',
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_DEPLYOYMENT_URL}/img/hero.png`,
+        url: `${process.env.NEXT_PUBLIC_DEPLYOYMENT_URL?.trim()}/img/hero.png`,
         width: 1200,
         height: 630,
         alt: 'Nanny Services - Easy seeking babysitters Online',
